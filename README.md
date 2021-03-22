@@ -1,5 +1,7 @@
 # CS370-Project
 
+**Using Python3**
+
 This project will look to acomplish two major goals:
 1. Pull information from various websites
 2. Use a monitor to display the information 
