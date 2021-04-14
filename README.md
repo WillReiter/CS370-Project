@@ -20,3 +20,8 @@ For task #1:
 For task #2:
     We will use any generic monitor in a vertical orientation to display the contenst we scape to the user
     We hope to utilize images to make for a cleaner user interface (image for current weather condition and cover art for top songs)
+    
+Install Docker on RPi: https://phoenixnap.com/kb/docker-on-raspberry-pi 
+    
+    
+To Install Docker-Compose (after installing docker via link above) use think link: https://stackoverflow.com/questions/58747879/docker-compose-usr-local-bin-docker-compose-line-1-not-command-not-found
