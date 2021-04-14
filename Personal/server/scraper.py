@@ -9,6 +9,8 @@ file = requests.get("https://weather.com/weather/today/l/bf4dfbdf5c25eebacf57cc2
 #file = requests.get("https://weather.com/en-IN/weather/tenday/l/INKA0344:1:IN") 
 soup = BeautifulSoup(file.content, "html.parser")
 
+file1 = open("info.txt","w")
+
 
 
 # create empty list 
@@ -23,6 +25,10 @@ print(f"temp= {temp}")
 print(f"condition= {condition}")
 print(f"percipitiation= {percip}")
 
+file1.write(temp + "\n")
+file1.write(condition + "\n")
+file1.write(percip + "\n")
+
 list.append(temp)
 list.append(condition)
 
@@ -35,6 +41,7 @@ soup = BeautifulSoup(file.content, "html.parser")
 headline = soup.find("h3", attrs = {"class" : "gs-c-promo-heading__title gel-paragon-bold gs-u-mt+ nw-o-link-split__text"}).text
 
 print(f"headline= {headline}")
+file1.write(headline + "\n")
 
 
 #************** Spotify *****************\
@@ -84,4 +91,10 @@ for elem in tempList:
     musicList.append(m1)
 for x in musicList:
     print(x.title)
+    file1.write(x.title + "\n")
+
+file1.close()
+
+
+
 
